@@ -31,7 +31,7 @@ SECRET="your-secret-key"   # JWT secret key
 DATABASE="host=localhost user=postgres password=yourpassword dbname=authdb port=5432 sslmode=disable"
 ```
 
-3. Start PostgreSQL server
+3. Start [PostgreSQL](https://www.postgresql.org/) server
 
 4. Run the backend server with [CompileDaemon](https://github.com/githubnemo/CompileDaemon):
 ```bash
