@@ -1,52 +1,56 @@
 # auth-golang-react
+
 An authentication developed using Golang for backend and React for frontend.
 
-## Installation
+## Prerequisites
+
+- [Go](https://go.dev/)
+- [Node.js](https://nodejs.org/)
+- [PostgreSQL](https://www.postgresql.org/)
+- [CompileDaemon](https://github.com/githubnemo/CompileDaemon)
+
+## Getting Started
 
 Clone the repository:
-    ```
-    git clone https://github.com/pxiaccount/auth-golang-react.git
-    ```
-
-### Golang
-
-1. Change directory in to backend:
-
-    ```bash
-    cd auth-golang-react/backend
-    ```
-
-2. Create .env files containing:
-
 ```bash
-PORT= // Insert port here
-SECRET="" // Insert your password
-DATABASE="host=YOURHOST user=USERNAME password=PASSWORD dbname=YOURDBNAME port=YOURDBPORT sslmode=disable"
+git clone https://github.com/pxiaccount/auth-golang-react.git
+cd auth-golang-react
 ```
 
-3. Run your <a href="https://www.postgresql.org/">PostgreSQL</a> server
+### Backend Setup
 
-4. Run the server using <a href="https://github.com/githubnemo/CompileDaemon">CompileDaemon</a> by <a href="https://github.com/githubnemo">githubnemo</a>
-
+1. Navigate to the backend directory:
 ```bash
-    compiledaemon -command="./auth-golang-react"
+cd backend
 ```
 
-### React
-1. Change directory in to client:
+2. Create a `.env` file in the backend directory:
+```env
+PORT=8080                  # Your backend port
+SECRET="your-secret-key"   # JWT secret key
+DATABASE="host=localhost user=postgres password=yourpassword dbname=authdb port=5432 sslmode=disable"
+```
 
-    ```bash
-    cd auth-golang-react/frontend
-    ```
+3. Start PostgreSQL server
 
-2. Install packages:
+4. Run the backend server with hot-reload:
+```bash
+compiledaemon -command="./auth-golang-react"
+```
 
-    ```bash
-    npm i
-    ```
+### Frontend Setup
 
-3. Run the development server:
+1. Change directory to frontend/:
+```bash
+cd frontend
+```
 
-    ```bash
-    npm run dev
-    ```
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Start the development server:
+```bash
+npm run dev
+```
