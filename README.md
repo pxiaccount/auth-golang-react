@@ -26,7 +26,7 @@ cd auth-golang-react/backend/
 
 2. Create a `.env` file in the backend directory:
 ```env
-PORT=8080                  # Your backend port
+PORT=3000                  # Your backend port
 SECRET="your-secret-key"   # JWT secret key
 DATABASE="host=localhost user=postgres password=yourpassword dbname=authdb port=5432 sslmode=disable"
 ```
