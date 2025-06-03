@@ -8,6 +8,8 @@ import (
 
 func init() {
 	initializers.LoadEnv()
+	initializers.ConnectDB()
+	initializers.AutoMigrate()
 }
 
 func main() {
