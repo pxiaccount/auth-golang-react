@@ -19,9 +19,9 @@ cd auth-golang-react
 
 ### Backend Setup
 
-1. Navigate to the backend directory:
+1. Change directory to backend:
 ```bash
-cd backend
+cd auth-golang-react/backend/
 ```
 
 2. Create a `.env` file in the backend directory:
@@ -33,21 +33,21 @@ DATABASE="host=localhost user=postgres password=yourpassword dbname=authdb port=
 
 3. Start PostgreSQL server
 
-4. Run the backend server with hot-reload:
+4. Run the backend server with [CompileDaemon](https://github.com/githubnemo/CompileDaemon):
 ```bash
 compiledaemon -command="./auth-golang-react"
 ```
 
-### Frontend Setup
+### React
 
-1. Change directory to frontend/:
+1. Change directory to frontend:
 ```bash
-cd frontend
+cd auth-golang-react/frontend
 ```
 
 2. Install dependencies:
 ```bash
-npm install
+npm i
 ```
 
 3. Start the development server:
